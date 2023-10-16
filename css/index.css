@@ -1,26 +1,29 @@
-@font-face { 
+@font-face {
     font-family: 'mefont';
     src: url('../fonts/fonts.otf') format('woff2'),
 }
 
 
-html{
+html {
     height: 100%;
     overflow: hidden;
 }
-body{
-    background-image: url("../img/bg.png")!important;
-    background-size:cover;
+
+body {
+    background-image: url("../img/bg.png") !important;
+    background-size: cover;
     margin: 0;
 }
-div.me{
+
+div.me {
     width: 80%;
-    position:fixed;
+    position: fixed;
     bottom: 400px;
     left: 10%;
     text-align: center;
 }
-h1.me{
+
+h1.me {
     color: antiquewhite;
     text-align: center;
     margin-top: 10px;
@@ -28,23 +31,26 @@ h1.me{
     font-family: 'mefont';
     font-size: 2.5em;
 }
-img.me{
-    width:125px;
-    border-radius:100%;
-    border-style:solid;
+
+img.me {
+    width: 125px;
+    border-radius: 100%;
+    border-style: solid;
     border-color: brown;
     position: absolute;
     left: 0;
 }
-div.detail{
-    position:fixed;
+
+div.detail {
+    position: fixed;
     width: 80%;
     left: 10%;
     bottom: 100px;
     border-top: 3px solid;
-    border-top-color:white ;
+    border-top-color: white;
 }
-div.name{
+
+div.name {
     margin-top: 20px;
     margin-left: 7%;
     backdrop-filter: blur(50px);
@@ -52,27 +58,30 @@ div.name{
     height: 220px;
     border-radius: 10px;
     padding-top: 15px;
-    display:inline-block;
-    overflow:hidden;
+    display: inline-block;
+    overflow-y: auto;
 }
-p.h{
+
+p.h {
     font-family: 'mefont';
     font-size: 20px;
     color: beige;
     margin-left: 10%;
     margin: 10px;
-    
+
 }
-p.t,ol{
+
+p.t,
+ol {
     font-family: serif;
-    color:cornsilk;
+    color: cornsilk;
     margin: 0;
     padding-left: 0;
     margin-left: 25%;
 }
 
-.skill{
-    position:absolute;
+.skill {
+    position: absolute;
     left: 38%;
     width: 24%;
     height: 220px;
@@ -80,10 +89,12 @@ p.t,ol{
     padding-top: 20px;
     border-radius: 10px;
     backdrop-filter: blur(50px);
-    display:inline-block;
+    display: inline-block;
+    overflow: hidden;
 }
-.fav{
-    position:absolute;
+
+.fav {
+    position: absolute;
     left: 69%;
     width: 24%;
     margin-top: 20px;
@@ -91,6 +102,44 @@ p.t,ol{
     border-radius: 10px;
     height: 220px;
     backdrop-filter: blur(50px);
-    display:inline-block;
-    overflow:hidden;
+    display: inline-block;
+    overflow-y:auto;
 }
+
+.fav::-webkit-scrollbar {
+    width: 3px;
+}
+
+.fav::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.fav::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.fav::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.name::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .name::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  .name::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+  
+  .name::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  CSS
+  
