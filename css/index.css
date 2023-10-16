@@ -53,6 +53,7 @@ div.name{
     border-radius: 10px;
     padding-top: 15px;
     display:inline-block;
+    overflow:hidden;
 }
 p.h{
     font-family: 'mefont';
